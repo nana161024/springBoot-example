@@ -3,18 +3,18 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.backstage</groupId>
-	<artifactId>springBoot-parent</artifactId>
+	<groupId>com.home</groupId>
+	<artifactId>friend-parent</artifactId>
 	<version>1.0.0</version>
 	<packaging>pom</packaging>
 
-	<name>springBoot</name>
-	<description>springBoot demo + maven</description>
+	<name>friend-parent</name>
+	<description>make a friend parent system</description>
 
 	<modules>
-        <module>springBoot-util</module>
-        <module>springBoot-base</module>
-        <module>springBoot-api</module>
+        <module>friend-util</module>
+        <module>friend-base</module>
+        <module>friend-api</module>
     </modules>
 
     <parent>
@@ -59,6 +59,5 @@
 			</plugin>
 		</plugins>
 	</build>
-
 
 </project>

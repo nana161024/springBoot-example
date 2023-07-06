@@ -1,17 +1,17 @@
-# springBoot-example
+# friend-parent
 * 概述：
     * 后端服务器侧（前后端分离，利用ajax交互）
-    * 前台为**springBoot-example-ui**，参见 https://github.com/jiangcaijun/springBoot-example-ui
+    * 前台为**friend-parent-ui**，参见 https://github.com/jiangcaijun/springBoot-example-ui
 #### 1、技术架构
 后端以springboot（版本2.1.4）、maven多模块为基础框架，数据库为 mysql + redis ，实现简单的 CRUD 功能。前后端以RESTFUL风格的ajax请求来进行交互。
   
 #### 2、项目分层
 
-* springBoot-api 控制层，主要是各类controller
+* friend-api 控制层，主要是各类controller
     * 实现对mysql常见的CRUD请求(PUT、DELETE、PATCH、POST、GET等)，以自定义的Response来返回至客户端（主要体现在 RedisExampleController.java类中）
     * 实现SpringBoot下redis的set与get（主要体现在 RedisExampleController.java类中）
-* springBoot-base 接口层,包含service接口和entiy实体类  
-* springBoot-util 工具类层
+* friend-base 接口层,包含service接口和entiy实体类  
+* friend-util 工具类层
 
 * 项目代码总体结构如下：
 
@@ -19,7 +19,7 @@
     
 
 #### 3、项目启动
-编辑 springBoot-example/springBoot-api/src/main/resources/application-dev.properties 文件，修改其中的jdbc链接信息，例如：
+编辑 friend-parent/friend-api/src/main/resources/application-dev.properties 文件，修改其中的jdbc链接信息，例如：
 
 ```
 spring.datasource.username=root
